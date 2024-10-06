@@ -1,16 +1,16 @@
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&display=swap');
 
-/*
+/* 
 font-family: "Poppins", sans-serif;
-font-family: "Bebas Neue", sans-serif;
+font-family: "Bebas Neue", sans-serif; 
 */
 
 * {
-    margin: 10px;
+    margin: 0;
     padding: 0;
     box-sizing: border-box; 
-    text-decoration: none;  /* quitar las lineas de abajo de los enlaces  */
-    list-style: none;    /* quita las bolitas de las listas  */
+    text-decoration: none;  /* quitar las lineas de abajo de los enlaces */
+    list-style: none;    /* quita las bolitas de las listas */
 }
 
 body {
@@ -100,14 +100,14 @@ img {
 p {
     font-size: 18px;
     color: #242424;
-    margin-bottom: 40px; 
+    margin-bottom: 40px;
 }
 
 .btn-1 {
     display: inline-block;
     padding: 14px 25px;
     background-color: #1a9ef0;
-    margin-bottom: 55px; 
+    margin-bottom: 55px;
     color: #f1f4fd;
     text-transform: uppercase;
     font-size: 15px;
@@ -209,16 +209,27 @@ h2 {
     padding-right: 80px;
 }
 
-
 .footer {
+    display: flex;
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente */
+    text-align: center; /* Asegura que el texto esté centrado */
     background-color: #1a9ef0;
     padding: 50px 0;
 }
 
 .footer-content {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    max-width: 800px; /* Define un ancho máximo para el contenido */
+}
+
+.footer ul {
+    list-style: none; /* Elimina los puntos de la lista */
+    padding: 0;
+}
+
+.footer a {
+    text-decoration: none; /* Elimina el subrayado de los enlaces */
+    color: #000; /* Color de los enlaces, puedes cambiarlo */
 }
 
 .link h3 {
@@ -239,6 +250,7 @@ h2 {
     color: #242424;
 }
 
+/* Media Queries */
 @media (max-width: 991px) {
     .menu label {
         display: block;
@@ -321,5 +333,59 @@ h2 {
 
     .about-txt {
         padding-right: 0;
+    }
+}
+
+/* Ajustes adicionales para pantallas pequeñas */
+@media (max-width: 576px) {
+    .header-txt h1 {
+        font-size: 2rem;
+    }
+
+    .header-img {
+        padding-top: 10px;
+    }
+
+    .brands {
+        flex-direction: column;
+    }
+
+    .brands-1 img {
+        width: 80px;
+    }
+
+    .services {
+        padding: 20px;
+    }
+
+    .services-1 {
+        padding: 20px;
+    }
+
+    h2 {
+        font-size: 30px;
+    }
+
+    .about-content {
+        flex-direction: column;
+    }
+
+    .about-img img {
+        max-width: 80%;
+    }
+
+    footer {
+        padding: 20px;
+    }
+
+    /* Botón más pequeño para pantallas pequeñas */
+    .btn-1 {
+        padding: 10px 20px; 
+        font-size: 14px;
+    }
+
+    /* Ajuste de las marcas en pantallas pequeñas */
+    .brands-1 img {
+        width: 100px;
     }
 }
