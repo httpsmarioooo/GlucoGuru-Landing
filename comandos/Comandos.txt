@@ -37,3 +37,18 @@ Comando para activar ConsejoNutricionalIntent-----
 2. Dame un consejo para controlar el azúcar {enfoqueNutricional}
 3. Dime cómo controlar el azúcar con la dieta {enfoqueNutricional}
 4. Dame un consejo para mi azúcar {enfoqueNutricional}
+
+
+
+
+Comando para activar GlucemiaIntent
+
+Nivel de glucemia < 70
+>= 70 
+>140
+
+1. Tengo {nivelGlucemia} de glucemia
+2. Mi glucosa está en {nivelGlucemia}
+3. El nivel de glucosa es {nivelGlucemia}
+4. Tengo un nivel de azúcar de {nivelGlucemia}
+5. Mi nivel de glucosa es {nivelGlucemia}
